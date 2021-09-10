@@ -1,5 +1,5 @@
 # Aplikasi_Covid_Mobile_Sederhana
-Ini adalah apliasi covid tracker sederhana yang dibuat dengan Kotlin dan Retrofit serta datanya APInya didatap dari kawalcorona.com
+Ini adalah apliasi covid tracker sederhana yang dibuat dengan Kotlin dan Retrofit serta datanya APInya didatap dari kawalcorona.com. Tujuan aplikasi ini dibuat salah satunya adalah belajar pengembangan Android Native secara Autodidak
 
 # berikut adalah screenshotnya
 
