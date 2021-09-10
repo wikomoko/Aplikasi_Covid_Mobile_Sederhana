@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kartu_prov"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#F28C8C"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nama_prov"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Jakarta"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama_prov" />
+
+        <TextView
+            android:id="@+id/prov_positif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="406205"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.38" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Positif"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/divider3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/prov_positif"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/prov_sembuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="406205"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/prov_positif"
+            app:layout_constraintEnd_toStartOf="@+id/divider4"
+            app:layout_constraintStart_toEndOf="@+id/divider3"
+            app:layout_constraintTop_toTopOf="@+id/prov_positif" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Sembuh"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/divider4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/divider3"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/divider3"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Meninggal"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/prov_meninggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="406205"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/prov_sembuh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toTopOf="@+id/prov_sembuh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
